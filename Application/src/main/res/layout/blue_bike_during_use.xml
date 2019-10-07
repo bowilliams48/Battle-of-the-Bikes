@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@drawable/gray_background">
+
+    <TextView
+        android:id="@+id/blue_blueDistance"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:textSize="15sp"
+        android:layout_below="@id/blue_bluePic" />
+
+    <TextView
+        android:id="@+id/blue_blueSpeed"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:textSize="15sp"
+        android:layout_below="@id/blue_blueDistance" />
+
+    <TextView
+        android:id="@+id/blue_redDistance"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:textSize="15sp"
+        android:layout_below="@id/blue_redPic" />
+
+    <TextView
+        android:id="@+id/blue_redSpeed"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:textSize="15sp"
+        android:layout_below="@id/blue_redDistance"/>
+
+    <Chronometer
+        android:id="@+id/blueTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="30dp"
+        android:layout_above="@+id/bluePowerupButton"/>
+
+    <Button
+        android:id="@+id/bluePowerupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:text="PowerUp" />
+
+    <ImageView
+        android:id="@+id/blue_bluePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/blue_redSpeed"
+        android:paddingTop="15dp"
+        android:src="@drawable/bluebike" />
+
+    <ImageView
+        android:id="@+id/blue_redPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="15dp"
+        android:src="@drawable/redbike" />
+
+    <ImageView
+        android:id="@+id/blueInFirst"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toEndOf="@+id/blue_bluePic"
+        android:layout_below="@+id/blue_redSpeed"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:paddingStart="5dp"
+        android:paddingTop="15dp"
+        android:src="@drawable/firstplace" />
+
+    <ImageView
+        android:id="@+id/blueInSecond"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/blue_redSpeed"
+        android:layout_toEndOf="@+id/blue_bluePic"
+        android:visibility="invisible"
+        android:paddingTop="15dp"
+        android:paddingStart="5dp"
+        android:src="@drawable/secondplace" />
+
+
+
+</RelativeLayout>
